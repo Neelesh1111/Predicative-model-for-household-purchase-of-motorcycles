@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
-file_address = "/Users/neelesh/Downloads/a.xlsx"
-logisticregression_data = pd.read_excel(file_address, "Sheet1", index_col=None, usecols=("I, J, Q, V"))
+logisticregression_data = pd.read_excel(a.xlsx, "Sheet1", index_col=None, usecols=("I, J, Q, V"))
 logisticregression_data = logisticregression_data.drop([0, 1])
 logisticregression_data.columns = ["industry", "household_type", "mpce", "mot_cycle"]
 logisticregression_data["householdmpce_rank"] = logisticregression_data["mpce"].rank(pct=True)
